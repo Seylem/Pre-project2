@@ -1,6 +1,7 @@
 package main.java.jm.task.core.jdbc;
 
 import main.java.jm.task.core.jdbc.dao.UserDaoJDBCImpl;
+import main.java.jm.task.core.jdbc.service.UserService;
 import main.java.jm.task.core.jdbc.service.UserServiceImpl;
 import main.java.jm.task.core.jdbc.util.Util;
 
@@ -12,8 +13,7 @@ import java.sql.Statement;
 
 public class Main {
     public static void main(String[] args) {
-        // реализуйте алгоритм здесь
-        UserServiceImpl qwe = new UserServiceImpl();
+        UserService qwe = new UserServiceImpl();
 
         qwe.createUsersTable();
 
