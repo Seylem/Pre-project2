@@ -1,12 +1,13 @@
-package main.java.jm.task.core.jdbc.dao;
+package jm.task.core.jdbc.dao;
 
-import main.java.jm.task.core.jdbc.model.User;
-import java.lang.reflect.InvocationTargetException;
+import jm.task.core.jdbc.dao.UserDao;
+import jm.task.core.jdbc.model.User;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.java.jm.task.core.jdbc.util.Util.getConnectJDBC;
+import static jm.task.core.jdbc.util.Util.getConnectJDBC;
 
 public class UserDaoJDBCImpl implements UserDao {
     public UserDaoJDBCImpl() { }
